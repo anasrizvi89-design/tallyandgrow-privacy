@@ -1,70 +1,25 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Tally & Grow — Privacy Policy</title>
-<style>
-  body {
-    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif;
-    max-width: 720px;
-    margin: 0 auto;
-    padding: 40px 20px 80px;
-    line-height: 1.6;
-    color: #1a1a1a;
-    background: #ffffff;
-  }
-  h1 { font-size: 1.8em; margin-bottom: 0.2em; }
-  h2 { font-size: 1.2em; margin-top: 1.8em; color: #2a2a2a; }
-  p, li { font-size: 1em; }
-  .updated { color: #666; font-size: 0.9em; margin-bottom: 2em; }
-  code { background: #f2f2f2; padding: 2px 6px; border-radius: 4px; }
-</style>
-</head>
-<body>
-
-<h1>Privacy Policy for Tally & Grow</h1>
-<p class="updated">Last updated: 9 July 2026</p>
-
-<p>Tally & Grow ("the app") is a personal finance and investment tracker. This policy explains what data the app handles and how.</p>
-
-<h2>Summary</h2>
-<p>Tally & Grow does not collect, transmit, or sell any personal or financial data. There is no account, no login, and no server backend operated by the developer. All of your financial data — accounts, transactions, budgets, goals, and investment holdings — is stored locally on your device only.</p>
-
-<h2>Data storage</h2>
-<p>All app data (accounts, transactions, categories, budgets, goals, investment holdings) is stored in a local database on your device. This data never leaves your device unless you explicitly export a backup file yourself. Backup files you create are saved to your device's storage under your control; the developer has no access to them.</p>
-
-<h2>Network access</h2>
-<p>The app connects to the internet only to fetch <strong>public market data</strong> needed to show live prices for stocks, ETFs, mutual funds, and cryptocurrency, and to convert between currencies. These requests only ever contain a ticker symbol or currency code — never your name, account balances, transaction history, or any other personal or financial information. The services used are:</p>
-<ul>
-  <li>Yahoo Finance (stock/ETF price quotes)</li>
-  <li>CoinGecko (cryptocurrency prices)</li>
-  <li>mfapi.in (Indian mutual fund NAV data)</li>
-  <li>ExchangeRate-API (currency conversion rates)</li>
-</ul>
-<p>These are third-party public data providers; the app does not send them any identifying information about you or your device.</p>
-
-<h2>Biometric app lock</h2>
-<p>If you enable the optional biometric lock, Tally & Grow uses your device's built-in biometric authentication (fingerprint/face unlock) via Android's standard BiometricPrompt API. Your biometric data is handled entirely by the Android operating system and is never accessed, seen, or stored by the app or the developer.</p>
-
+<html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><title>Tally &amp; Grow — Privacy Policy</title><style>body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Arial,sans-serif;max-width:720px;margin:0 auto;padding:40px 20px 80px;line-height:1.6;color:#1a1a1a;background:white}h1{font-size:1.8em}h2{font-size:1.2em;margin-top:1.8em}.updated{color:#666}</style></head><body>
+<h1>Privacy Policy for Tally &amp; Grow</h1>
+<p class="updated">Last updated: 7 October 2026</p>
+<p><strong>App:</strong> Tally &amp; Grow (com.tallyandgrow). <strong>Developer:</strong> Tally and Grow. Contact: <a href="mailto:anas.rizvi89@gmail.com">anas.rizvi89@gmail.com</a>.</p>
+<h2>Summary and local records</h2>
+<p>Tally &amp; Grow is a local-first personal finance and investment portfolio tracker. The developer does not operate an account or financial-data backend. Accounts, balances, transactions, budgets, goals, holdings and locally calculated insights are stored in the app's private database on your device. The app has no advertising, analytics or crash-reporting SDKs. It does not execute trades, link bank or broker accounts, move money, lend, or hold funds or cryptocurrency keys.</p>
+<h2>Optional Smart Transaction Capture</h2>
+<p>If you enable Smart Transaction Capture and grant Android's Receive SMS permission, the app examines new incoming SMS messages for likely purchase alerts. Parsing happens on your device. The draft may include amount, currency, merchant, card suffix and a suggested category. The complete SMS is not stored or uploaded. You must review and confirm the draft before it is saved as an expense. The app does not request READ_SMS or scan your existing inbox. Turn the feature off in Settings or revoke SMS permission in Android Settings to stop capture.</p>
+<h2>Network requests and external providers</h2>
+<p>Internet access is used to search supported investments, refresh market prices and obtain currency exchange rates. Requests can contain your search terms, ticker symbols, coin identifiers, mutual fund scheme codes or currency codes. They do not include account balances, transaction history, holding quantities, cost basis, SMS contents or app-lock credentials. Requests go over HTTPS to:</p>
+<ul><li>Yahoo Finance: stock and ETF search and quotes.</li><li>CoinGecko: cryptocurrency search and prices.</li><li>mfapi.in: Indian mutual fund search and NAV data.</li><li>ExchangeRate-API: currency conversion rates.</li></ul>
+<p>These providers receive the requested identifiers and ordinary network information such as your IP address and request headers. Requests may relate to investments you track. Providers handle their server logs under their own privacy practices; the developer does not receive those logs. Prices and rates may be delayed, cached or unavailable. Core record keeping can be used offline.</p>
+<h2>App lock</h2>
+<p>The optional PIN is stored as a salted PBKDF2 hash, not readable text. Optional fingerprint or face unlock uses Android's biometric authentication system; the app does not receive your biometric templates. App lock controls access to the app and does not mean that the local database itself is encrypted.</p>
 <h2>Permissions</h2>
-<ul>
-  <li><strong>Internet / network state</strong> — used only for the live price and currency-conversion lookups described above.</li>
-  <li><strong>Biometric</strong> — used only to unlock the app if you turn that feature on.</li>
-</ul>
-<p>The app does not request location, contacts, camera, microphone, SMS, or storage-wide permissions.</p>
-
-<h2>Analytics, ads, and tracking</h2>
-<p>Tally & Grow contains no analytics SDKs, no crash-reporting SDKs, no advertising, and no third-party tracking of any kind.</p>
-
-<h2>Children's privacy</h2>
-<p>The app is a general personal-finance tool and is not directed at children.</p>
-
-<h2>Changes to this policy</h2>
-<p>If this policy changes, the updated version will be posted at this URL with a new "Last updated" date.</p>
-
-<h2>Contact</h2>
-<p>Questions about this policy can be sent to: <a href="mailto:anas.rizvi89@gmail.com">anas.rizvi89@gmail.com</a></p>
-
-</body>
-</html>
+<ul><li>Internet and network state: public market-data and currency requests.</li><li>Use biometric: optional app unlock.</li><li>Receive SMS: optional purchase-alert capture from new messages, as described above.</li><li>Post notifications: reminders and alerts, including expense drafts ready for review. Financial notification content is marked private for the lock screen; Android notification settings also affect visibility.</li></ul>
+<p>The app does not request SMS-history access, contacts, location, camera, microphone or storage-wide access. Android's document picker provides access to files you choose for export or import.</p>
+<h2>Backups, CSV and sharing</h2>
+<p>You can export a password-encrypted backup and choose where Android saves it, including a local folder or a cloud document provider. The developer does not receive the backup. Keep the password safe; the app cannot recover it. CSV exports are plain, unencrypted files containing your selected financial records. Optional recap sharing sends the content you select to the app or destination you choose. Any chosen cloud provider or recipient handles exported or shared data under its own practices.</p>
+<h2>Retention and deletion</h2>
+<p>Local records remain until you remove them, clear the app's storage in Android Settings, or uninstall the app. Clearing storage or uninstalling removes the app's local database and settings. Exported backups, CSV files and shared copies remain in their chosen locations; delete those separately if needed. There is no developer-side user account to delete.</p>
+<h2>Children</h2><p>The app is a general personal finance tool and is not directed at children under 13.</p>
+<h2>Changes and contact</h2><p>Updates to this policy will appear at this URL with a revised date. For privacy questions, contact <a href="mailto:anas.rizvi89@gmail.com">anas.rizvi89@gmail.com</a>.</p>
+</body></html>
